@@ -28,15 +28,14 @@ const User = ({ user, id }) => {
                                     <p className="lacation">{user.location.country + ", "
                                         + user.location.city}</p>
                                     <hr />
-                                    <p className="user-detail">{"Phone: " + user.phone}</p>
+                                    <p className="user-detail">{"Phone: " + user.phone
+                                        + " | Age: " + user.dob.age}</p>
                                     <p className="user-detail">{"Birth Date: "
-                                        + user.dob.date.slice(0, 10) + " | Age: "
-                                        + user.dob.age}</p>
-                                    <p className="user-detail">Email: {user.email}</p>
-                                    <p className="user-detail">{"Registered Date: "
-                                        + user.registered.date.slice(0, 10)
-                                        + " | Registered Age:"
+                                        + user.dob.date.slice(0, 10) + " | Registered Age:"
                                         + user.registered.age}</p>
+                                    <p className="user-detail">{"Registered Date: "
+                                        + user.registered.date.slice(0, 10)}</p>
+                                    <p className="user-detail">Email: {user.email}</p>
                                 </div> : null
                             }
                         </div>
